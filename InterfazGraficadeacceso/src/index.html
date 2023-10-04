@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavadero de Motos</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Lavadero de Motos</title>
 </head>
 <body>
 
-    <div id="formulario">
-        <h2>Lavadero de Motos</h2>
-        <form id="myForm">
-            <label for="nombreCliente">Nombre del Cliente:</label>
-            <input type="text" id="nombreCliente" name="nombreCliente" required>
+    <h1>Moto Wash VIP</h1>
 
-            <label for="tipoMoto">Tipo de Moto:</label>
-            <input type="text" id="tipoMoto" name="tipoMoto" required>
+    <form action="#" method="post" onsubmit="guardarDatos(event)">
+        <label for="nombre">Nombre del Cliente:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-            <label for="placaMoto">Placa de la Moto:</label>
-            <input type="text" id="placaMoto" name="placaMoto" required>
+        <br>
 
-            <button type="button" onclick="guardarDatos()">Guardar Datos</button>
-        </form>
-    </div>
+        <label for="marca">Marca de la Moto:</label>
+        <input type="text" id="marca" name="marca" required>
+
+        <br>
+
+        <label for="cilindraje">Cilindraje:</label>
+        <input type="text" id="cilindraje" name="cilindraje" required>
+
+        <br>
+
+        <label for="placa">Placa de la Moto:</label>
+        <input type="text" id="placa" name="placa" oninput="this.value = this.value.toUpperCase();" required>
+
+        <br>
+
+        <label for="tipoLavado">Tipo de Lavado:</label>
+        <select id="tipoLavado" name="tipoLavado" required>
+            <option value="sencilla">Sencilla</option>
+            <option value="especial">Especial</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <br>
+
+        <button type="submit">Guardar Datos</button>
+    </form>
 
     <script src="app.js"></script>
+
 </body>
 </html>
