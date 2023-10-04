@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavadero de Motos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="formulario">
+        <h2>Lavadero de Motos</h2>
+        <form id="myForm">
+            <label for="nombreCliente">Nombre del Cliente:</label>
+            <input type="text" id="nombreCliente" name="nombreCliente" required>
+
+            <label for="tipoMoto">Tipo de Moto:</label>
+            <input type="text" id="tipoMoto" name="tipoMoto" required>
+
+            <label for="placaMoto">Placa de la Moto:</label>
+            <input type="text" id="placaMoto" name="placaMoto" required>
+
+            <button type="button" onclick="guardarDatos()">Guardar Datos</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
